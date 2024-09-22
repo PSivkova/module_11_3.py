@@ -1,11 +1,13 @@
 def introspection_info(obj):
-    print(type(obj))
-    print(dir(obj))
-    print(hasattr(obj, "obj"))
-    print(getattr(obj, 'a', "Упс"))
-    print(callable(obj))
-    print(isinstance(obj, str))
+    a = (type(obj))
+    b = (dir(obj))
+    c = (hasattr(obj, "obj"))
+    d = (getattr(obj, 'a', "Упс"))
+    e = (callable(obj))
+    f = (isinstance(obj, str))
+    return [a, b, c, d, e, f]
 
 
 number_info = introspection_info(45)
+print(number_info)
 
